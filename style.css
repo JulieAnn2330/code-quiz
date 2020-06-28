@@ -11,6 +11,11 @@
     margin-right: 10px;
 }
 
+/* Style of jumbotron */
+.jumbotron {
+    margin-top: 100px;
+}
+
 /* Style of footer */
 .navbar-brand {
     text-align: center;
