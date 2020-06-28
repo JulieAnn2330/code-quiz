@@ -153,3 +153,12 @@
       return score;
     }
   })();
+
+  //     if (correctAnswer === 2) { 
+//         alert("You are correct!");
+//     Array.prototype.push.apply(selections, questionCounter);
+//     console.log(confirmUcase);
+// }
+//     else if (correctAnswer === 5 || correctAnswer === 10) {
+//         alert("Your answer was incorrect.");
+//     }
