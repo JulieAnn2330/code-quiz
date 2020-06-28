@@ -16,6 +16,10 @@
     margin-top: 100px;
 }
 
+p, form {
+    margin-left: 15px;
+}
+
 /* Style of radio button */
    .block {
       display: block;
