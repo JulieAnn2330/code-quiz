@@ -1,9 +1,9 @@
-/* 'Style of page' */
-.brand {
+/* 'Style of landing page and quiz page */
+.brand, .quiz-brand {
     font-family: 'Montserrat', sans-serif;
     color:rgb(21, 9, 92);
     font-size: 25px;
-    margin-right: 700px;
+    margin-right: 1000px;
 }
 
 /* Style of ampersand */
@@ -13,6 +13,14 @@
 
 /* Style of footer */
 .navbar-brand {
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    margin-left: 650px;
+}
+
+/* Style of footer */
+.quiz-footer {
     text-align: center;
     color: white;
     font-size: 13px;
