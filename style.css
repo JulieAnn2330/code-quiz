@@ -16,7 +16,14 @@
     margin-top: 100px;
 }
 
-p, form {
+/* Style of questions */
+p, form, h4 {
+    margin-left: 15px;
+}
+
+/* Style of examples */
+aside {
+    color: red;
     margin-left: 15px;
 }
 
