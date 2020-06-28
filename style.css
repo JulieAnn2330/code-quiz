@@ -11,6 +11,13 @@
     margin-right: 10px;
 }
 
+/* Style of countdown timer */
+h3 {
+    text-align: center;
+    color: blue;
+    background-color: lightslategray;    
+}
+
 /* Style of jumbotron */
 .jumbotron {
     margin-top: 100px;

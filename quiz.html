@@ -24,11 +24,13 @@
         <img class="ampersand" src="./Assets/ampersand.png" width="30" height="30" class="d-inline-block align-top"
             alt="ampersand">
         <a class="quiz-brand" class="navbar-brand">JavaScript Code Quiz</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav nav-pills">
                 <li class="nav-item">
@@ -37,6 +39,18 @@
         </div>
     </nav>
 
+    <h3> The quiz will end in <span id="countdowntimer">90 </span> Seconds</h3>
+
+<script type="text/javascript">
+    var timeleft = 90;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(downloadTimer);
+    },1000);
+</script>
+   
     <h4>1. What does javaScript provide to code?</h4>
     <form>
         <label class="block"></label><input type="radio" name="choice" value="yes"> a. Curb Appeal
