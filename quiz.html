@@ -1,143 +1,172 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <!-- Link to favicon -->
-        <link rel="shortcut icon" href="./Assets/ampersand.png" />
-        <title>Code Quiz</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-      
-        <!-- Link to style.css -->
-        <link rel="stylesheet" href="style.css">
-        <!-- Link to fontawesome -->
-        <script src="https://kit.fontawesome.com/5892237bfb.js" crossorigin="anonymous"></script>
-        <!-- Link to Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<head>
+    <!-- Link to favicon -->
+    <link rel="shortcut icon" href="./Assets/ampersand.png" />
+    <title>Code Quiz</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-            <img class="ampersand" src="./Assets/ampersand.png" width="30" height="30" class="d-inline-block align-top"
-              alt="ampersand">
-            <a class="quiz-brand" class="navbar-brand">JavaScript Code Quiz</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav nav-pills">
-                  <li class="nav-item">
+    <!-- Link to style.css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to fontawesome -->
+    <script src="https://kit.fontawesome.com/5892237bfb.js" crossorigin="anonymous"></script>
+    <!-- Link to Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <img class="ampersand" src="./Assets/ampersand.png" width="30" height="30" class="d-inline-block align-top"
+            alt="ampersand">
+        <a class="quiz-brand" class="navbar-brand">JavaScript Code Quiz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
                     <a class="nav-link active" href="./index.html"><i class="fas fa-home"></i> Home</a>
-                  </li>
-                </div>
-            </nav>
+                </li>
+        </div>
+    </nav>
 
-            <p>1. What does javaScript provide to code?
-                a. Curb Appeal
-                b. Functionality
-                c. The Foundation
-                d. None of the Above
-            </p>
-        
-            <p>2. What is a simple defintion of javaScript?
-                a. JavaScript gives web pages interactive elements that engage a user.
-                b. JavaScript gives structure and style to web pages.
-                c. JavaScript defines rules for the construction of a document. 
-                d. None of the Above
-            </p>
+    <p>1. What does javaScript provide to code?</p>
+    <form>
+        <label class="block"></label><input type="radio" name="choice" value="yes"> a. Curb Appeal
+        <label class="block"></label><input type="radio" name="choice" value="no"> b. Functionality
+        <label class="block"></label><input type="radio" name="choice" value="no"> c. The Foundation
+        <label class="block"></label><input type="radio" name="choice" value="no"> d. None of the above
+        <label class="block"></label><input type="button" id="btn" value="Submit Answer">
+    </form>
 
-            <p>3. What are commonly used in computer programs to organize data so that a related set of values can be easily sorted or searched?
-                a. Functions
-                b. Objects
-                c. Arrays
-                d. None of the Above
-            </p>
 
-            <p>4. The following is an example of what?
-                for (var i=0, i < userlength, i++)
-                a. Function
-                b. Array
-                c. Object
-                d. For Loop
-            </p>
 
-            <p>5. In the following array, what animal is at index = 2?
+    <p>2. What is a simple defintion of javaScript?
+    <form>
+        <label class="block"></label><input type="radio" name="choice" value="yes"> a. JavaScript gives web pages interactive elements that engage a
+        user.
+        <label class="block"></label><input type="radio" name="choice" value="no"> b. JavaScript gives structure and style to web pages.
+        <label class="block"></label><input type="radio" name="choice" value="no"> c. JavaScript defines rules for the construction of a document.
+        <label class="block"></label><input type="radio" name="choice" value="no"> d. None of the Above
+        <label class="block"></label><input type="button" id="btn" value="Submit Answer">
+    </form>
+
+
+    <p>3. What are commonly used in computer programs to organize data so that a related set of values can be easily
+        sorted or searched?
+    <form>
+        <label class="block"></label><input type="radio" name="choice" value="yes">a. Functions
+        <label class="block"></label><input type="radio" name="choice" value="no"> b. Objects
+        <label class="block"></label><input type="radio" name="choice" value="no"> c. Arrays
+        <label class="block"></label><input type="radio" name="choice" value="no"> d. None of the Above
+        <label class="block"></label><input type="button" id="btn" value="Submit Answer">
+    </form>
+
+    <p>4. The following is an example of what?
+        for (var i=0, i < userlength, i++) <form>
+            <label class="block"></label><input type="radio" name="choice" value="yes">a. Function
+            <label class="block"></label><input type="radio" name="choice" value="no"> b. Array
+            <label class="block"></label><input type="radio" name="choice" value="no"> c. Object
+            <label class="block"></label><input type="radio" name="choice" value="no"> d. For Loop
+            <label class="block"></label><input type="button" id="btn" value="Submit Answer">
+            </form>
+
+            <p>5. In the following array, what animal is at [animals] = 2?
                 var animals = ["Giraffe", "Tiger" "Elephant", "Hippo"]
-                a. Hippo
-                b. Giraffe
-                c. Undefined
-                d. Elephant
-            </p>
+            <form>
+                <label class="block"></label><input type="radio" name="choice" value="yes"> a. Hippo
+                <label class="block"></label><input type="radio" name="choice" value="no"> b. Giraffe
+                <label class="block"></label><input type="radio" name="choice" value="no"> c. Undefined
+                <label class="block"></label><input type="radio" name="choice" value="no"> d. Elephant
+                <label class="block"></label><input type="button" id="btn" value="Submit Answer">
+            </form>
+
             <p>6. What is a variable?
-                a. A request made by a program or script that performs a predetermined function.
-                b. A block of code designed to perform a particular task.
-                c. A container for storing data values.
-                d. None of the Above
-            </p>
+            <form>
+                <label class="block"></label><input type="radio" name="choice" value="yes"> a. A request made by a program or script that performs a
+                predetermined function.
+                <label class="block"></label><input type="radio" name="choice" value="no"> b. A block of code designed to perform a particular task.
+                <label class="block"></label><input type="radio" name="choice" value="no"> c. A container for storing data values.
+                <label class="block"></label><input type="radio" name="choice" value="no"> d. None of the Above
+                <label class="block"></label><input type="button" id="btn" value="Submit Answer">
+            </form>
 
             <p>7. What is a function call?
-                a. A request made by a program or script that performs a predetermined function.
-                b. A special variable, which can hold more than one value at a time.
-                c. A method.
-                d. None of the Above
-            </p>
+            <form>
+                <label class="block"></label><input type="radio" name="choice" value="yes"> a. A request made by a program or script that performs a
+                predetermined function.
+                <label class="block"></label><input type="radio" name="choice" value="no"> b. A special variable, which can hold more than one value
+                at a time.
+                <label class="block"></label><input type="radio" name="choice" value="no"> c. A method.
+                <label class="block"></label><input type="radio" name="choice" value="no"> d. None of the Above
+                <label class="block"></label><input type="button" id="btn" value="Submit Answer">
+            </form>
 
             <p>8. In the following operation what is the value of total?
                 var price1 = 5;
                 var price2 = 6;
                 var total = price1 + price2;
-                a. 6
-                b. 5
-                c. 11
-                d. 30
-            </p>
+            <form>
+                <label class="block"></label><input type="radio" name="choice" value="yes"> a. 6
+                <label class="block"></label><input type="radio" name="choice" value="no"> b. 5
+                <label class="block"></label><input type="radio" name="choice" value="no"> c. 11
+                <label class="block"></label><input type="radio" name="choice" value="no"> d. 30
+                <label class="block"></label><input type="button" id="btn" value="Submit Answer">
+            </form>
 
-            <p>9. In the folloing function, what will the value of x be? 
-                var x = myFunction(4, 3); 
+            <p>9. In the folloing function, what will the value of x be?
+                var x = myFunction(4, 3);
 
                 function myFunction(a, b) {
-                  return a * b;             
+                return a * b;
                 }
-                a. 7
-                b. Undefined
-                c. 1
-                d. 12
-            </p>
-            <p>10. Strict equality means values which we are comparing must have the same type, and is represented by which operator?
-                a. ===
-                b. =
-                c. ==
-                d. None of the Above
-            </p>
+            <form>
+                <label class="block"></label><input type="radio" name="choice" value="yes"> a. 7
+                <label class="block"></label><input type="radio" name="choice" value="no"> b. Undefined
+                <label class="block"></label><input type="radio" name="choice" value="no"> c. 1
+                <label class="block"></label><input type="radio" name="choice" value="no"> d. 12
+                <label class="block"></label><input type="button" id="btn" value="Submit Answer">
+            </form>
+
+            <p>10. Strict equality means values which we are comparing must have the same type, and is represented by
+                which operator?
+            <form>
+                <label class="block"></label><input type="radio" name="choice" value="yes"> a. ===
+                <label class="block"></label><input type="radio" name="choice" value="no"> b. =
+                <label class="block"></label><input type="radio" name="choice" value="no"> c. ==
+                <label class="block"></label><input type="radio" name="choice" value="no"> d. None of the Above
+                <label class="block"></label><input type="button" id="btn" value="Submit Answer">
+            </form>
+
+            <!-- Footer -->
+            <div class="container">
+                <nav class="navbar fixed-bottom navbar-white bg-secondary" .text-white>
+                    <a class="quiz-footer" class="navbar-brand" href="#"> Created by Julie Ann Schaub, 2020</a>
+                </nav>
+                <div class="container text-center"></div>
+            </div>
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                crossorigin="anonymous"></script>
+            </body>
+
+            <script.js>
 
 
-<!-- Footer -->
-<div class="container">
-  <nav class="navbar fixed-bottom navbar-white bg-secondary".text-white>
-    <a class="quiz-footer" class="navbar-brand" href="#"> Created by Julie Ann Schaub, 2020</a>
-     </nav>
-  <div class="container text-center"></div>
-</div>
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-  crossorigin="anonymous"></script>
-</body>
-
-<script.js>
-
-
-</script.js>
+            </script.js>
