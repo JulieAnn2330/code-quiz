@@ -6,11 +6,10 @@
         clearInterval(downloadTimer);
     },1000);
 
-
 const btn = document.querySelector('#btn');
 // handle click button
 btn.onclick = function () {
-    const rbs = document.querySelectorAll('input[name="choice"]');
+    const rbs = document.querySelectorAll('input[name="one"]');
     let selectedValue;
     for (const rb of rbs) {
         if (rb.checked) {
@@ -18,5 +17,6 @@ btn.onclick = function () {
             break;
         }
     }
-    alert(Correct);
+    alert(selectedValue);
 };
+
