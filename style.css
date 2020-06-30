@@ -17,7 +17,7 @@ h3 {
     color: blue;
     background-color: lightslategray;    
     padding: 10px;
-}
+    }
 
 /* Style of jumbotron */
 .jumbotron {
@@ -28,7 +28,7 @@ h3 {
 /* Style of quiz box background */
 .grid {
     width: 600px;
-    height: 500px;
+    height: 535px;
     margin: 0 auto;
     background-color: lightgrey;
     padding: 10px 50px 50px 50px;
@@ -45,12 +45,12 @@ h3 {
 #button0, #button1, #button2, #button3 {
     background-color: lightslategray;
     height: 50px;
-    width: 500px;
+    width: 525px;
     font-size: 15px;
     color: white;
     border: black;
     border-radius: 50px;
-    margin: 10px 40px 10px 0px;
+    margin: 10px 100px 10px 0px;
     padding: 10px, 10px;
 }
 
@@ -75,9 +75,9 @@ h3 {
     font-size: 30px;
 }
 
-/* Style of footer showing progress of quiz */
+ /* Style of footer showing progress of quiz */
    #progress {
-       margin-top: 40px;
+       margin-top: 20px;
        color: navy;
        font-size: 13px;
    }

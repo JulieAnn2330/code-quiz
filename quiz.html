@@ -21,7 +21,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     </head>
 
-    <!-- Navaigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
         <img class="ampersand" src="./Assets/ampersand.png" width="30" height="30" class="d-inline-block align-top"
             alt="ampersand">
@@ -41,19 +40,16 @@
         </div>
     </nav>
 
-    <!-- Countdown clock -->
-    <h3> The quiz will end in <span id="countdowntimer">90 </span> Seconds</h3>
+    <h3 id="countdowntimer">The quiz will end in 90 Seconds</h3>
 
-    <!-- Box that quiz is in -->
 <body>
 <div class="grid">
 	<div id="quiz">
         <h1 id="title">Week 4 JavaScript Code Quiz</h1>
 		
-<!-- Question being pulled from js -->
+
 		<p id="question"></p>
-        
-        <!-- Buttons with answers in them -->
+		
 		<div class= "buttons">
 			<button id="button0"><span id = "choice0"></span></button>
 			<button id="button1"><span id = "choice1"></span></button>
@@ -61,8 +57,7 @@
             <button id="button3"><span id = "choice3"></span></button>
             </div>
 
-			<!-- Progress bar at bottom of quiz -->
-			<footer>
+          	<footer>
 				<p id="progress">Question x of y</p>
 			</footer>
 
