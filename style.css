@@ -75,15 +75,10 @@ h3 {
     font-size: 30px;
 }
 
-/* Style of radio button */
-  /* .block {
-      display: block;
-   } */
-
-   /* Style of footer showing progress of quiz */
+/* Style of footer showing progress of quiz */
    #progress {
-       margin-top: 50px;
-       color: slategray;
+       margin-top: 40px;
+       color: navy;
        font-size: 13px;
    }
 
