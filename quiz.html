@@ -3,7 +3,7 @@
 
 <head>
     <!-- Link to favicon -->
-    <link rel="shortcut icon" href="./Assets/ampersand.png" />
+    <link rel="shortcut icon" href="./ampersand.png" />
     <title>Code Quiz</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -19,9 +19,10 @@
     <script src="https://kit.fontawesome.com/5892237bfb.js" crossorigin="anonymous"></script>
     <!-- Link to Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    </head>
 
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-        <img class="ampersand" src="./Assets/ampersand.png" width="30" height="30" class="d-inline-block align-top"
+        <img class="ampersand" src="./ampersand.png" width="30" height="30" class="d-inline-block align-top"
             alt="ampersand">
         <a class="quiz-brand" class="navbar-brand">JavaScript Code Quiz</a>
     
@@ -50,154 +51,40 @@
         clearInterval(downloadTimer);
     },1000);
 </script>
-<div class="questions">
-    <h4>1. What does javaScript provide to code?</h4>
-    <form>
-        <label class="block"></label><input type="radio" name="one" value="Incorrect"> a. Curb Appeal
-        <label class="block"></label><input type="radio" name="one" value="Correct"> b. Functionality
-        <label class="block"></label><input type="radio" name="one" value="Incorrect"> c. The Foundation
-        <label class="block"></label><input type="radio" name="one" value="Incorrect"> d. None of the above
-        <label class="block"></label><input type="button" id="btn" value="Submit Answer">
-     </form>
-</div>
-  
-<div class="questions">
-    <h4>2. What is a simple defintion of javaScript?</h4>
-    <form>
-        <label class="block"></label><input type="radio" name="choice" value="yes"> a. JavaScript gives web pages interactive elements that engage a
-        user.
-        <label class="block"></label><input type="radio" name="choice" value="no"> b. JavaScript gives structure and style to web pages.
-        <label class="block"></label><input type="radio" name="choice" value="no"> c. JavaScript defines rules for the construction of a document.
-        <label class="block"></label><input type="radio" name="choice" value="no"> d. None of the Above
-        <label class="block"></label><input type="button" id="btn" value="Submit Answer">
-    </form>
-</div>
-  
-<div class="questions">
-    <h4>3. What are commonly used in computer programs to organize data so that a related set of values can be easily
-        sorted or searched?</h4>
-    <form>
-        <label class="block"></label><input type="radio" name="choice" value="yes">a. Functions
-        <label class="block"></label><input type="radio" name="choice" value="no"> b. Objects
-        <label class="block"></label><input type="radio" name="choice" value="no"> c. Arrays
-        <label class="block"></label><input type="radio" name="choice" value="no"> d. None of the Above
-        <label class="block"></label><input type="button" id="btn" value="Submit Answer">
-    </form>
-</div>
-  
-<div class="questions">
-    <h4>4. The following is an example of what?</h4>
-    <aside>for (var i=0, i < userlength, i++)</aside> 
-    <form>
-            <label class="block"></label><input type="radio" name="choice" value="yes">a. Function
-            <label class="block"></label><input type="radio" name="choice" value="no"> b. Array
-            <label class="block"></label><input type="radio" name="choice" value="no"> c. Object
-            <label class="block"></label><input type="radio" name="choice" value="no"> d. For Loop
-            <label class="block"></label><input type="button" id="btn" value="Submit Answer">
-            </form>
-</div>
-  
-<div class="questions">
-    <h4>5. In the following array, what animal is at [animals] = 2?</h4>
-    <aside>var animals = ["Giraffe", "Tiger" "Elephant", "Hippo"]</aside>
-<form>
-    <label class="block"></label><input type="radio" name="choice" value="yes"> a. Hippo
-    <label class="block"></label><input type="radio" name="choice" value="no"> b. Giraffe
-    <label class="block"></label><input type="radio" name="choice" value="no"> c. Undefined
-    <label class="block"></label><input type="radio" name="choice" value="no"> d. Elephant
-    <label class="block"></label><input type="button" id="btn" value="Submit Answer">
-</form>
-</div>
-        
-<div class="questions">
-    <h4>6. What is a variable?</h4>
-    <form>
-        <label class="block"></label><input type="radio" name="choice" value="yes"> a. A request made by a program or script that performs a
-        predetermined function.
-        <label class="block"></label><input type="radio" name="choice" value="no"> b. A block of code designed to perform a particular task.
-        <label class="block"></label><input type="radio" name="choice" value="no"> c. A container for storing data values.
-        <label class="block"></label><input type="radio" name="choice" value="no"> d. None of the Above
-        <label class="block"></label><input type="button" id="btn" value="Submit Answer">
-    </form>
-</div>
-          
-<div class="questions">
-    <h4>7. What is a function call?</h4>
-    <form>
-        <label class="block"></label><input type="radio" name="choice" value="yes"> a. A request made by a program or script that performs a
-        predetermined function.
-        <label class="block"></label><input type="radio" name="choice" value="no"> b. A special variable, which can hold more than one value
-        at a time.
-        <label class="block"></label><input type="radio" name="choice" value="no"> c. A method.
-        <label class="block"></label><input type="radio" name="choice" value="no"> d. None of the Above
-        <label class="block"></label><input type="button" id="btn" value="Submit Answer">
-    </form>
-</div>
-       
-<div class="questions">
-    <h4>8. In the following operation what is the value of total?</h4>
-    <aside>var price1 = 5;<br>
-        var price2 = 6;<br>
-    var total = price1 + price2;</aside>
-    <form>
-        <label class="block"></label><input type="radio" name="choice" value="yes"> a. 6
-        <label class="block"></label><input type="radio" name="choice" value="no"> b. 5
-        <label class="block"></label><input type="radio" name="choice" value="no"> c. 11
-        <label class="block"></label><input type="radio" name="choice" value="no"> d. 30
-        <label class="block"></label><input type="button" id="btn" value="Submit Answer">
-    </form>
-</div>
-       
-<div class="questions">
-    <h4>9. In the folloing function, what will the value of x be?</h4>
-    <aside>var x = myFunction(4, 3);<br><br>
-    function myFunction(a, b) {<br>
-     return a * b;<br>
-    }</aside>
-<form>
-    <label class="block"></label><input type="radio" name="choice" value="yes"> a. 7
-    <label class="block"></label><input type="radio" name="choice" value="no"> b. Undefined
-    <label class="block"></label><input type="radio" name="choice" value="no"> c. 1
-    <label class="block"></label><input type="radio" name="choice" value="no"> d. 12
-    <label class="block"></label><input type="button" id="btn" value="Submit Answer">
-</form>
-</div>
-       
-<div class="questions">
-    <h4>10. Strict equality means values which we are comparing must have the same type, and is represented by
-        which operator?</h4>
-    <form>
-        <label class="block"></label><input type="radio" name="choice" value="yes"> a. ===
-        <label class="block"></label><input type="radio" name="choice" value="no"> b. =
-        <label class="block"></label><input type="radio" name="choice" value="no"> c. ==
-        <label class="block"></label><input type="radio" name="choice" value="no"> d. None of the Above
-        <label class="block"></label><input type="button" id="btn" value="Submit Answer">
-    </form>
-</div>
-        
 
-            <!-- Footer -->
+<body>
+<div class="grid">
+	<div id="quiz">
+        <h1 id="title">Week 4 JavaScript Code Quiz</h1>
+		
+
+		<p id="question"></p>
+		
+		<div class= "buttons">
+			<button id="button0"><span id = "choice0"></span></button>
+			<button id="button1"><span id = "choice1"></span></button>
+			<button id="button2"><span id = "choice2"></span></button>
+            <button id="button3"><span id = "choice3"></span></button>
+            </div>
+
+			
+			<footer>
+				<p id="progress">Question x of y</p>
+			</footer>
+
+		</div>
+	
+		<!-- Footer -->
             <div class="container">
                 <nav class="navbar fixed-bottom navbar-white bg-secondary" .text-white>
                     <a class="quiz-footer" class="navbar-brand" href="#"> Created by Julie Ann Schaub, 2020</a>
                 </nav>
                 <div class="container text-center"></div>
-            </div>
+			</div>
+		
+		<script src="app.js"></script>
+     
+    </body>
+</html>
 
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-                crossorigin="anonymous"></script>
-            </body>
-
-            <script src="script.js">
-
-
-            </script>
+		
