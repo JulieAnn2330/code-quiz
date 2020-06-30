@@ -1,71 +1,89 @@
-body {
-    font-family: Open Sans;
+/* 'Style of landing page and quiz page */
+.brand, .quiz-brand {
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(21, 9, 92);
+    font-size: 25px;
+    margin-right: 1000px;
 }
 
-h1 {
+/* Style of ampersand */
+.ampersand {
+    margin-right: 10px;
+}
+
+/* Style of countdown timer */
+h3 {
     text-align: center;
+    color: blue;
+    background-color: lightslategray;    
 }
 
-#title {
-    text-decoration: underline;
+/* Style of jumbotron */
+.jumbotron {
+    margin-top: 100px;
 }
 
-#quiz {
-    text-indent: 10px;
-    display:none;
+.grid {
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: lightgrey;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: black;
 }
 
-.button {
-    border:4px solid;
-    border-radius:5px;
-    width: 40px;
-    padding-left:5px;
-    padding-right: 5px;
-    position: relative;
-    float:right;
-    background-color: #DCDCDC;
+.buttons {
+    margin-top: 30px;
+}
+
+#button0, #button1, #button2, #button3 {
+    background-color: lightslategray;
+    height: 40px;
+    width: 500px;
+    font-size: 20px;
+    color: white;
+    border: black;
+    border-radius: 50px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px, 10px;
+}
+
+/* Style of questions */
+.grid #question {
+    font-size: 30px;
     color: black;
-    margin: 0 2px 0 2px;
+    margin-left: 15px;
 }
 
-.button.active {
-    background-color: #F8F8FF;
-    color: #525252;
+/* Style of examples */
+.grid aside {
+    color: red;
+    margin-left: 15px;
 }
 
-button {
-    position: relative;
-    float:right;
+/* Style of radio button */
+  .block {
+      display: block;
+   }
+
+   #progress {
+       color: slategray;
+       font-size: 13px;
+   }
+
+/* Style of footer */
+.navbar-brand {
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    margin-left: 650px;
 }
 
-.button a {
-    text-decoration: none;
-    color: black;
-}
-
-#container {
-    width:50%;
-    margin:auto;
-    padding: 0 25px 40px 10px;
-    background-color: #1E90FF;
-    border:4px solid #B0E0E6;
-    border-radius:5px;
-    color: #FFFFFF;
-    font-weight: bold;
-    box-shadow: 5px 5px 5px #888;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#prev {
-    display:none;
-}
-
-#start {
-    display:none;
-    width: 90px;
+/* Style of footer */
+.quiz-footer {
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    margin-left: 650px;
 }
