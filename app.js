@@ -1,5 +1,5 @@
 // Countdown clock
-var timeleft = 90;
+var timeleft = 5;
 var downloadTimer = setInterval(function () {
     timeleft--;
     document.getElementById("countdowntimer").textContent = "The quiz will end in " + timeleft + " Seconds";
@@ -52,7 +52,7 @@ Question.prototype.correctAnswer = function (choice) {
     return choice === this.answer;
 }
 
-//    Showing scores
+//    Starting the game
 function populate() {
     if (quiz.isEnded()) {
         showScores();
@@ -92,12 +92,14 @@ function showProgress() {
 // Scoring page
 function showScores() {
     var gameOverHtml = "<h1>Result</h1>";
-    gameOverHtml += "<h2 id = 'score'> Your score is " + quiz.score + " out of 10!" + "</h2>";
+    gameOverHtml += "<h2 id = 'score'> Your score is " + quiz.score + " out of 10! Thank you for playing " + ("myText") + "!</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHtml;
     clearInterval(downloadTimer);
     document.getElementById("countdowntimer").innerHTML = "<h1>Game Over</h1>";
    }
+
+
 
 // Questions
 var questions = [

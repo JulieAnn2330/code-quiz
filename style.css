@@ -25,6 +25,10 @@ h3 {
     padding: 30px;
 }
 
+.lead {
+    padding: 20px 10px 10px 0px;
+}
+
 /* Style of quiz box background */
 .grid {
     width: 600px;
