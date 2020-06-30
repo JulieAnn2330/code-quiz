@@ -1,5 +1,5 @@
 // Countdown clock
-var timeleft = 5;
+var timeleft = 90;
 var downloadTimer = setInterval(function () {
     timeleft--;
     document.getElementById("countdowntimer").textContent = "The quiz will end in " + timeleft + " Seconds";
