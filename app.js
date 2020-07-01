@@ -1,5 +1,5 @@
 // Countdown clock
-var timeleft = 90;
+var timeleft = 5 ;
 var downloadTimer = setInterval(function () {
     timeleft--;
     document.getElementById("countdowntimer").textContent = "The quiz will end in " + timeleft + " Seconds";
@@ -41,13 +41,14 @@ Quiz.prototype.guess = function (answer) {
 
     this.questionIndex++;
 }
-
+// Items needed for array
 function Question(text, choices, answer) {
     this.text = text;
     this.choices = choices;
     this.answer = answer;
 }
 
+// Answer is correct
 Question.prototype.correctAnswer = function (choice) {
     return choice === this.answer;
 }
@@ -71,9 +72,12 @@ function populate() {
             guess("button" + i, choices[i]);
         }
 
+        // Run progress bar
         showProgress();
     }
 };
+
+// Answering the question
 function guess(id, guess) {
     var button = document.getElementById(id);
     button.onclick = function () {
@@ -83,25 +87,36 @@ function guess(id, guess) {
 }
 
 // Progress bar at bottom of quiz
-function showProgress() {
+function showProgress() { 
     var currentQuestionNumber = quiz.questionIndex + 1;
     var element = document.getElementById("progress");
     element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
 }
 
 // Scoring page
+function myFunction() {
+    var x = document.getElementById("frm1");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+      text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+  }
+
 function showScores() {
     var gameOverHtml = "<h1>Result</h1>";
-    gameOverHtml += "<h2 id = 'score'> Your score is " + quiz.score + " out of 10! Thank you for playing " + ("myText") + "!</h2>";
+    gameOverHtml += "<h2 id = 'score'> Your score is " + quiz.score + " out of 10! Thank you for playing!</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHtml;
     clearInterval(downloadTimer);
     document.getElementById("countdowntimer").innerHTML = "<h1>Game Over</h1>";
-   }
+    setTimeout(function(){
+        window.location.href ="./wall_of_fame.html";
+     }, 3000);
+    };
 
-
-
-// Questions
+ // Questions
 var questions = [
     new Question("1. What does javaScript provide to code?", ["a. Curb Appeal", "b. Functionality", "c. The Foundation", "d. None of the above"], "b. Functionality"),
     new Question("2. What is a simple defintion of javaScript?", ["a. JavaScript gives web pages interactive elements that engage a user.", "b. JavaScript gives structure and style to web pages.", "c. JavaScript defines rules for the construction of a document.", "d. None of the Above"], "a. JavaScript gives web pages interactive elements that engage a user."),
