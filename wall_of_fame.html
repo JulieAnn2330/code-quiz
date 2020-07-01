@@ -1,4 +1,3 @@
-<!-- Navigation Bar -->
 <!doctype html>
 <html lang="en">
 
@@ -33,15 +32,15 @@
 
         </nav>
 
-        <h2 id="wall_of_fame">Quiz Wall of Fame</h2>
+        <h1 class="wall_of_fame">Quiz Wall of Fame</h1>
 
     <body>
     <div class="scores">
       <form id="player-form" method="POST">
-        <label for="player-text">Add a Player:</label>
-        <input type="text" placeholder="Enter Name Here!" name="player-text" id="player-text" />
+        <label class = enterPlayer for="player-text">Add a Player:</label>
+        <input type="text" placeholder="Enter Your Name Here!" name="player-text" id="player-text" />
       </form>
-      <p>Games: <span id="score-count">0</span></p>
+      <p>Games Played: <span id="score-count">0</span></p>
       <ul id="player-list"></ul>
     </div>
     <script src="./wall_of_fame.js"></script>
@@ -53,6 +52,8 @@
             </nav>
             <div class="container text-center"></div>
         </div>
+
+<button class = "startOver" onclick="myFunction()">Start Over</button>
     
     <script src="wall_of_fame.js"></script>
 

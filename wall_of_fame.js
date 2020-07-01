@@ -80,3 +80,7 @@ playerList.addEventListener("click", function(event) {
     renderPlayers();
   }
 });
+
+function myFunction() {
+  location.replace("./index.html")
+}
