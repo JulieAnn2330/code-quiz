@@ -1,5 +1,5 @@
 /* 'Style of landing page and quiz page */
-.brand, .quiz-brand {
+.brand, .quiz-brand, body {
     font-family: 'Montserrat', sans-serif;
     color:rgb(21, 9, 92);
     font-size: 25px;
@@ -101,11 +101,6 @@ h3 {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Concert One", cursive;
-  font-size: 16px;
-}
-
 input {
   height: 50px;
   width: 100%;
@@ -121,16 +116,19 @@ ul {
   background-color: white;
 }
 
+/* High score list */
 li {
   height: 50px;
+  width: 500px;
   margin-top: 5px;
   margin-bottom: 5px;
+  margin-left: 350px;
   padding: 5px;
-  background-color: #ff5d88;
+  background-color: navy;
   color: white;
-  font-size: 1.5em;
+  font-size: 20px;
   line-height: 1.5;
-}
+  }
 
 li:before {
   content: "\200B";
@@ -143,12 +141,13 @@ li::after {
   clear: both;
 }
 
+/* Complete button */
 li button {
   float: right;
   border: none;
   height: 40px;
   cursor: pointer;
-  background-color: #ff9500;
+  background-color: navy;
   color: white;
   font-size: 1em;
 }
@@ -157,8 +156,10 @@ li button:hover {
   background-color: #febc5d;
 }
 
+/* Text at top of page */
 .todos {
   width: 800px;
   margin: 0 auto;
   margin-top: 40px;
+  margin-left: 150px;
 }
