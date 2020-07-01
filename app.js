@@ -113,7 +113,7 @@ function showScores() {
     document.getElementById("countdowntimer").innerHTML = "<h1>Game Over</h1>";
     setTimeout(function(){
         window.location.href ="./wall_of_fame.html";
-     }, 3000);
+     }, 2000);
     };
 
  // Questions

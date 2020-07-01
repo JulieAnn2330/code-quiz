@@ -1,21 +1,60 @@
-<!DOCTYPE html>
+<!-- Navigation Bar -->
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Todo List</title>
-  </head>
-  <body>
-    <div class="todos">
-      <form id="todo-form" method="POST">
-        <label for="todo-text">Add a Todo:</label>
-        <input type="text" placeholder="What needs to be done?" name="todo-text" id="todo-text" />
+
+<head>
+     <!-- Link to favicon -->
+     <link rel="shortcut icon" href="./Assets/ampersand.png" />
+    <title>Code Quiz</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Link to style.css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to fontawesome -->
+    <script src="https://kit.fontawesome.com/5892237bfb.js" crossorigin="anonymous"></script>
+    <!-- Link to Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <img class="ampersand" src="./Assets/ampersand.png" width="30" height="30" class="d-inline-block align-top"
+            alt="ampersand">
+        <a class="brand" class="navbar-brand">JavaScript Code Quiz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        </nav>
+
+        <h2 id="wall_of_fame">Quiz Wall of Fame</h2>
+
+    <body>
+    <div class="scores">
+      <form id="player-form" method="POST">
+        <label for="player-text">Add a Player:</label>
+        <input type="text" placeholder="Enter Name Here!" name="player-text" id="player-text" />
       </form>
-      <p>Todo Count: <span id="todo-count">0</span></p>
-      <ul id="todo-list"></ul>
+      <p>Games: <span id="score-count">0</span></p>
+      <ul id="player-list"></ul>
     </div>
     <script src="./wall_of_fame.js"></script>
+
+    	<!-- Footer -->
+        <div class="container">
+            <nav class="navbar fixed-bottom navbar-white bg-secondary" .text-white>
+                <a class="quiz-footer" class="navbar-brand" href="#"> Created by Julie Ann Schaub, 2020</a>
+            </nav>
+            <div class="container text-center"></div>
+        </div>
+    
+    <script src="wall_of_fame.js"></script>
+
   </body>
 </html>

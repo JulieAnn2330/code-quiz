@@ -1,5 +1,5 @@
 /* 'Style of landing page and quiz page */
-.brand, .quiz-brand, body {
+.brand {
     font-family: 'Montserrat', sans-serif;
     color:rgb(21, 9, 92);
     font-size: 25px;
@@ -66,13 +66,7 @@ h3 {
     margin-top: 25px;
 }
 
-/* Style of examples */
-.grid aside {
-    color: red;
-    margin-left: 15px;
-}
-
-/* Style of q1uiz name */
+/* Style of quiz name */
 #title {
     margin-top: 10px;
     text-align: center;
@@ -95,11 +89,11 @@ h3 {
     padding: 10px;
 }
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} */
 
 input {
   height: 50px;
@@ -122,7 +116,7 @@ li {
   width: 500px;
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 350px;
+  margin-left: 450px;
   padding: 5px;
   background-color: navy;
   color: white;
@@ -130,16 +124,16 @@ li {
   line-height: 1.5;
   }
 
-li:before {
+/* li:before {
   content: "\200B";
   position: absolute;
-}
+} */
 
-li::after {
+/* li::after {
   content: " ";
   display: block;
   clear: both;
-}
+} */
 
 /* Complete button */
 li button {
@@ -157,9 +151,9 @@ li button:hover {
 }
 
 /* Text at top of page */
-.todos {
+.scores {
   width: 800px;
   margin: 0 auto;
   margin-top: 40px;
-  margin-left: 150px;
+  margin-left: 125px;
 }

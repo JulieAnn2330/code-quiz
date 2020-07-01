@@ -1,82 +1,82 @@
-var todoInput = document.querySelector("#todo-text");
-var todoForm = document.querySelector("#todo-form");
-var todoList = document.querySelector("#todo-list");
-var todoCountSpan = document.querySelector("#todo-count");
-var todos = ["Learn HTML", "Learn CSS", "Learn JavaScript"];
+var playerInput = document.querySelector("#player-text");
+var playerForm = document.querySelector("#player-form");
+var playerList = document.querySelector("#player-list");
+var scoreCountSpan = document.querySelector("#score-count");
+var players = ["name + quiz.score", "Learn CSS", "Learn JavaScript"];
 
-renderTodos();
-function renderTodos() {
+renderPlayers();
+function renderPlayers() {
   // Clear todoList element and update todoCountSpan
-  todoList.innerHTML = "";
-  todoCountSpan.textContent = todos.length;
+  playerList.innerHTML = "";
+  scoreCountSpan.textContent = players.length;
 
   // Render a new li for each todo
-  for (var i = 0; i < todos.length; i++) {
-    var todo = todos[i];
+  for (var i = 0; i < players.length; i++) {
+    var highScore = players[i];
 
     var li = document.createElement("li");
-    li.textContent = todo;
-    todoList.appendChild(li);
+    li.textContent = highScore;
+    playerList.appendChild(li);
   
     var button = document.createElement("button");
     button.textContent = "Complete";
 
     li.appendChild(button);
-    todoList.appendChild(li);
+    playerList.appendChild(li);
   }
 }
 
 function init() {
   // Get stored todos from localStorage
   // Parsing the JSON string to an object
-  var storedTodos = JSON.parse(localStorage.getItem("todos"));
+  var storedPlayers = JSON.parse(localStorage.getItem("scores"));
 
   // If todos were retrieved from localStorage, update the todos array to it
-  if (storedTodos !== null) {
-    todos = storedTodos;
+  if (storedPlayers !== null) {
+    players = storedPlayers;
   }
 
   // Render todos to the DOM
-  renderTodos();
+  renderPlayers();
 }
 
-function storeTodos() {
+function storePlayers() {
   // Stringify and set "todos" key in localStorage to todos array
-  localStorage.setItem("todos", JSON.stringify(todos));
+  localStorage.setItem("scores", JSON.stringify(players));
 }
 
 // When form is submitted...
-todoForm.addEventListener("submit", function(event) {
+playerForm.addEventListener("submit", function(event) {
   event.preventDefault();
 
-  var todoText = todoInput.value.trim();
+  var playerText = playerInput.value.trim();
 
   // Return from function early if submitted todoText is blank
-  if (todoText === "") {
+  if (playerText === "") {
     return;
   }
 
   // Add new todoText to todos array, clear the input
-  todos.push(todoText);
-  todoInput.value = "";
+  players.push(playerText);
+  playerInput.value = "";
 
   // Store updated todos in localStorage, re-render the list
-  storeTodos();
-  renderTodos();
+  storePlayers();
+  renderPlayers();
 });
 
 // When a element inside of the todoList is clicked...
-todoList.addEventListener("click", function(event) {
+playerList.addEventListener("click", function(event) {
   var element = event.target;
 
   // If that element is a button...
   if (element.matches("button") === true) {
     // Get its data-index value and remove the todo element from the list
     var index = element.parentElement.getAttribute("data-index");
-    todos.splice(index, 1);
+    players.splice(index, 1);
 
     // Store updated todos in localStorage, re-render the list
-    storeTodos();
-    renderTodos();
+    storePlayers();
+    renderPlayers();
   }
 });
