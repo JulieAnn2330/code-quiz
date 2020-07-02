@@ -6,11 +6,11 @@ var players = ["name + quiz.score", "Learn CSS", "Learn JavaScript"];
 
 renderPlayers();
 function renderPlayers() {
-  // Clear todoList element and update todoCountSpan
+  // Clear playerList element and update playerCountSpan
   playerList.innerHTML = "";
   scoreCountSpan.textContent = players.length;
 
-  // Render a new li for each todo
+  // Render a new li for each player
   for (var i = 0; i < players.length; i++) {
     var highScore = players[i];
 
@@ -27,16 +27,16 @@ function renderPlayers() {
 }
 
 function init() {
-  // Get stored todos from localStorage
+  // Get stored players from localStorage
   // Parsing the JSON string to an object
   var storedPlayers = JSON.parse(localStorage.getItem("scores"));
 
-  // If todos were retrieved from localStorage, update the todos array to it
+  // If playerswere retrieved from localStorage, update the todos array to it
   if (storedPlayers !== null) {
     players = storedPlayers;
   }
 
-  // Render todos to the DOM
+  // Render players to the DOM
   renderPlayers();
 }
 
@@ -66,20 +66,20 @@ playerForm.addEventListener("submit", function(event) {
 });
 
 // When a element inside of the todoList is clicked...
-playerList.addEventListener("click", function(event) {
-  var element = event.target;
+// playerList.addEventListener("click", function(event) {
+//   var element = event.target;
 
   // If that element is a button...
-  if (element.matches("button") === true) {
+  // if (element.matches("button") === true) {
     // Get its data-index value and remove the todo element from the list
-    var index = element.parentElement.getAttribute("data-index");
-    players.splice(index, 1);
+    // var index = element.parentElement.getAttribute("data-index");
+    // players.splice(index, 1);
 
     // Store updated todos in localStorage, re-render the list
     storePlayers();
     renderPlayers();
-  }
-});
+  // }
+// });
 
 function myFunction() {
   location.replace("./index.html")

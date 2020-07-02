@@ -89,70 +89,6 @@ h3, .wall_of_fame {
     padding: 10px;
 }
 
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-} */
-
-/* Enter Name */
-input {
-  height: 50px;
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 2.4em;
-  border: 2px solid navy;
-  border-radius: 4px;
-  padding: 6px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  background-color: white;
-}
-
-/* High score list */
-li {
-  height: 50px;
-  width: 500px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 400px;
-  padding: 5px;
-  background-color: navy;
-  color: white;
-  font-size: 20px;
-  line-height: 1.5;
-  }
-
-/* li:before {
-  content: "\200B";
-  position: absolute;
-} */
-
-/* li::after {
-  content: " ";
-  display: block;
-  clear: both;
-} */
-
-/* Complete button */
-li button {
-  float: right;
-  border: none;
-  height: 40px;
-  cursor: pointer;
-  background-color: navy;
-  color: white;
-  font-size: 1em;
-}
-
-li button:hover {
-  background-color: #febc5d;
-}
-
 /* Text at top of page */
 .scores {
   width: 800px;
@@ -174,3 +110,35 @@ li button:hover {
     font-size: 20px;
     padding: 20px;
 }
+
+/* body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}       
+
+.countdownBox {
+  color: black;
+  background-color: white;
+  padding: 20px;
+} */
+
+/* .hoverBox {
+  background: yellowgreen;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 20px;
+  outline: 1px solid #dddddd;
+  overflow: auto;
+  width: 75%;
+} */
+
+/* .startHidden {
+  display: none;
+} */
+
+/* a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: initial;
+} */

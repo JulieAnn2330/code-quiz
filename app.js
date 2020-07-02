@@ -36,6 +36,7 @@ Quiz.prototype.guess = function (answer) {
 
     else {
         alert("Incorrect");
+        this.score--;
         timeleft -= 10;
     }
 
@@ -106,16 +107,18 @@ function myFunction() {
 
 function showScores() {
     var gameOverHtml = "<h1>Result</h1>";
-    gameOverHtml += "<h2 id = 'score'> Your score is " + quiz.score + " out of 10! Thank you for playing!</h2>";
+    gameOverHtml += "<h2 id = 'score'> Your score is " + quiz.score + " out of 10! Thank you for playing, " + name + "!</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHtml;
+    var leaderboardHtml = "<h1>Wall of Fame</h1>";
+    leaderboardHtml += "<h2 id = 'score'>" + name + " " + quiz.score + "</h2>";
+    var element = document.getElementById("leaderboard");
+    element.innerHTML = leaderboardHtml;
     clearInterval(downloadTimer);
     document.getElementById("countdowntimer").innerHTML = "<h1>Game Over</h1>";
-    setTimeout(function(){
-        window.location.href ="./wall_of_fame.html";
-     }, 2000);
-    };
+      };
 
+  
  // Questions
 var questions = [
     new Question("1. What does javaScript provide to code?", ["a. Curb Appeal", "b. Functionality", "c. The Foundation", "d. None of the above"], "b. Functionality"),
@@ -133,3 +136,5 @@ var questions = [
 var quiz = new Quiz(questions);
 
 populate();
+
+
