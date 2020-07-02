@@ -110,10 +110,10 @@ function showScores() {
     gameOverHtml += "<h2 id = 'score'> Your score is " + quiz.score + " out of 10! Thank you for playing, " + name + "!</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHtml;
-    var leaderboardHtml = "<h1>Wall of Fame</h1>";
-    leaderboardHtml += "<h2 id = 'score'>" + name + " " + quiz.score + "</h2>";
-    var element = document.getElementById("leaderboard");
-    element.innerHTML = leaderboardHtml;
+    // var leaderboardHtml = "<h1>Wall of Fame</h1>";
+    // leaderboardHtml += "<h2 id = 'score'>" + name + " " + quiz.score + "</h2>";
+    // var element = document.getElementById("leaderboard");
+    // element.innerHTML = leaderboardHtml;
     clearInterval(downloadTimer);
     document.getElementById("countdowntimer").innerHTML = "<h1>Game Over</h1>";
       };

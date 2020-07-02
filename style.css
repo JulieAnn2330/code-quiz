@@ -11,8 +11,12 @@
     margin-right: 10px;
 }
 
+#list {
+    margin-left: -50px;
+}
+
 /* Style of countdown timer */
-h3, .wall_of_fame {
+h3 {
     text-align: center;
     color: blue;
     background-color: lightslategray;    
@@ -89,7 +93,7 @@ h3, .wall_of_fame {
     padding: 10px;
 }
 
-/* Text at top of page */
+/* Text at top of page
 .scores {
   width: 800px;
   margin: 0 auto;
@@ -109,36 +113,5 @@ h3, .wall_of_fame {
     color: white;
     font-size: 20px;
     padding: 20px;
-}
-
-/* body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}       
-
-.countdownBox {
-  color: black;
-  background-color: white;
-  padding: 20px;
 } */
 
-/* .hoverBox {
-  background: yellowgreen;
-  margin: 0 auto;
-  margin-top: 10%;
-  padding: 20px;
-  outline: 1px solid #dddddd;
-  overflow: auto;
-  width: 75%;
-} */
-
-/* .startHidden {
-  display: none;
-} */
-
-/* a.button {
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-  text-decoration: none;
-  color: initial;
-} */
