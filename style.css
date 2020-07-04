@@ -11,6 +11,7 @@
     margin-right: 10px;
 }
 
+/* Style of Start over link */
 #list {
     margin-left: -50px;
 }
@@ -93,25 +94,17 @@ h3 {
     padding: 10px;
 }
 
-/* Text at top of page
-.scores {
-  width: 800px;
-  margin: 0 auto;
-  margin-top: 40px;
-  margin-left: 125px;
-}
-
-.enterPlayer {
-    font-size: 40px;
+/* Style of text Wall of Fame */
+.wall_of_fame {
+    text-align: center;
     color: navy;
+    padding: 20px;
 }
 
-/* Start over button */
-.startOver {
-    margin-left: 1250px;
-    background-color: slategray;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-} */
+/* Style of see leaderboard button */
+input[type=button] {
+   vertical-align: center;
+   padding: 5px;
+   margin-left: 700px;
+}
 
