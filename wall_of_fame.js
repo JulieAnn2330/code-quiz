@@ -1,42 +1,42 @@
 function generate_table() {
-    // get the reference for the body
-    var body = document.getElementsByTagName("body")[0];
-  
-    // creates a <table> element and a <tbody> 
-    var tbl = document.createElement("table");
-    var tblBody = document.createElement("tbody");
-   
-    var player = [];
+  // get the reference for the body
+  var body = document.getElementsByTagName("body")[0];
 
-    if (startGame === true) {
-    Array.prototype.push.apply(player, name);
-     }
-  
-    // creating all cells
-    for (var i = 0; i < 10; i++) {
-      // creates a table row
-      var row = document.createElement("tr");
-  
-      for (var j = 0; j < 3; j++) {
-        // Create a <td> element and a text node, make the text
-        // node the contents of the <td>, and put the <td> at
-        // the end of the table row
-       var cell = document.createElement("td");
-        var cellText = document.createTextNode(player);
-        cell.appendChild(cellText);
-        row.appendChild(cell);
-      }
-  
+  // creates a <table> element and a <tbody> element
+  var tbl = document.createElement("table");
+  var tblBody = document.createElement("tbody");
 
-      // add the row to the end of the table body
-      tblBody.appendChild(row);
+  // creating all cells
+  for (var i = 0; i < 2; i++) {
+    // creates a table row
+    var row = document.createElement("tr");
+
+    for (var j = 0; j < 2; j++) {
+      // Create a <td> element and a text node, make the text
+      // node the contents of the <td>, and put the <td> at
+      // the end of the table row
+      var cell = document.createElement("td");
+      var cellText = document.createTextNode("cell in row "+i+", column "+j);
+      cell.appendChild(cellText);
+      row.appendChild(cell);
     }
-  
-    // put the <tbody> in the <table>
-    tbl.appendChild(tblBody);
-    // appends <table> into <body>
-    body.appendChild(tbl);
-    // sets the border attribute of tbl to 2;
-    tbl.setAttribute("border", "2");
-    tbl.setAttribute("align", "center")
+
+    // add the row to the end of the table body
+    tblBody.appendChild(row);
   }
+
+  // put the <tbody> in the <table>
+  tbl.appendChild(tblBody);
+  // appends <table> into <body>
+  body.appendChild(tbl);
+  // sets the border attribute of tbl to 2;
+  tbl.setAttribute("border", "2");
+  tbl.setAttribute("align", "center");
+  tbl.setAttribute("margin-top", "400px");
+}
+
+  // if (startGame === true) {
+  // Array.prototype.push.apply(player, name);
+  // }
+
+
