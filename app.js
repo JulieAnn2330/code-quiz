@@ -118,6 +118,7 @@ function showScores() {
         name: name, 
         score: quiz.score
     }
+
     var gameOver = "<h1>Result</h1>";
     gameOver += "<h2 id = 'score'> Your score is " + quiz.score + " out of 10! Thank you for playing, " + name + "!</h2>";
     var element = document.getElementById("quiz");
@@ -127,32 +128,14 @@ function showScores() {
     showCurrentScore();
     console.log(name);
   
-    
-    if (name !== "") {
+       if (name !== "") {
         var scores =
           JSON.parse(window.localStorage.getItem("scores")) || [];
         scores.push(scoreObject);
         window.localStorage.setItem("scores", JSON.stringify(scores));
       }
 
-      for (var i = 0; i < name.length; i++) {
-         selection.push(name);
-    }
-
-    for (var i = 0; i < scores.length; i++) {
-        selection.push(scores);
-   }
-
-//    var result = (name + scores);
-//    return result;
-//    }  
-
-    var leaderboardHtml = "<h1>Wall of Fame</h1>";
-    leaderboardHtml += "<h2 id = 'playerScore'>" + name + " " + quiz.score + "</h2>";
-    var element = document.getElementById("leaderboard");
-    // element.innerHTML = leaderboardHtml;
-
-    document.addEventListener('DOMContentLoaded', () => {
+      document.addEventListener('DOMContentLoaded', () => {
         var elements = []
         var container = document.querySelector('#container')
         // Add each row to the array
@@ -163,12 +146,12 @@ function showScores() {
         elements.sort((a, b) => b.querySelector('quiz.score').textContent - a.querySelector('quiz.score').textContent)
         // Put the elements back into the container
         elements.forEach(e => container.appendChild(e))
-      });
+        var result = name + scores;
+       
+        });
       };
-    //   setTimeout(function(){
-    //     window.location.href = 'wall_of_fame.html';
-    //  }, 10000);
-  
+
+   
  // Questions
 var questions = [
     new jsQuestion("1. What does javaScript provide to code?", ["a. Curb Appeal", "b. Functionality", "c. The Foundation", "d. None of the above"], "b. Functionality"),
@@ -187,16 +170,3 @@ var quiz = new codeQuiz(questions);
 
 populate();
 
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     var elements = []
-//     var container = document.querySelector('#container')
-//     // Add each row to the array
-//     container.querySelectorAll('.row').forEach(el => elements.push(el))
-//     // Clear the container
-//     container.innerHTML = ''
-//     // Sort the array from highest to lowest
-//     elements.sort((a, b) => b.querySelector('quiz.score').textContent - a.querySelector('quiz.score').textContent)
-//     // Put the elements back into the container
-//     elements.forEach(e => container.appendChild(e))
-//   });

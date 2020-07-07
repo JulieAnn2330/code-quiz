@@ -1,3 +1,16 @@
+Deployed program: https://julieann2330.github.io/code-quiz/
+
+# password-generator
+Java Script Code Quiz
+
+This is a homework assignment that I created for the University of Kansas Coding BootCamp. 
+
+It's week four and time for the students to take a 10 qu90estion quiz over JavaScript fundamentals. The quiz is timed at 90 seconds. For each question the student answers right, they get one point. For each question they answer wrong, they lose 10 seconds off the clock, plus a point. The quiz is over when all of the questions have been answered or time runs out. Scores dispay on the final page so the student can see how they did in comparison to others.
+
+I utilized several coding websites for help, including StackOverflow and w3schools.com I also watched YouTube tutorials and got assistance from fellow student Aurora Brune.  
+
+The full details of the project are listed below.
+
 # 04 Web APIs: Code Quiz
 
 As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. Build a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
