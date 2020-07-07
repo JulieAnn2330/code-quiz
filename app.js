@@ -87,6 +87,14 @@ function guess(id, guess) {
     }
 }
 
+// Show current score
+function showCurrentScore () {
+    var currentScore = quiz.score;
+    var element = document.getElementById("playerScore");
+    // element.innerHtml = currentScore;
+    console.log(currentScore);
+}
+
 // Progress bar at bottom of quiz
 function showProgress() { 
     var currentQuestionNumber = quiz.questionIndex + 1;
@@ -106,16 +114,56 @@ function myFunction() {
   }
 
 function showScores() {
+    var scoreObject = {
+        name: name, 
+        score: quiz.score
+    }
     var gameOver = "<h1>Result</h1>";
     gameOver += "<h2 id = 'score'> Your score is " + quiz.score + " out of 10! Thank you for playing, " + name + "!</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOver;
-    var leaderboardHtml = "<h1>Wall of Fame</h1>";
-    leaderboardHtml += "<h2 id = 'display'>" + name + " " + quiz.score + "</h2>";
-    var element = document.getElementById("leaderboard");
-    element.innerHTML = leaderboardHtml;
     clearInterval(downloadTimer);
     document.getElementById("countdowntimer").innerHTML = "<h1>Game Over</h1>";
+    showCurrentScore();
+    console.log(name);
+  
+    
+    if (name !== "") {
+        var scores =
+          JSON.parse(window.localStorage.getItem("scores")) || [];
+        scores.push(scoreObject);
+        window.localStorage.setItem("scores", JSON.stringify(scores));
+      }
+
+      for (var i = 0; i < name.length; i++) {
+         selection.push(name);
+    }
+
+    for (var i = 0; i < scores.length; i++) {
+        selection.push(scores);
+   }
+
+//    var result = (name + scores);
+//    return result;
+//    }  
+
+    var leaderboardHtml = "<h1>Wall of Fame</h1>";
+    leaderboardHtml += "<h2 id = 'playerScore'>" + name + " " + quiz.score + "</h2>";
+    var element = document.getElementById("leaderboard");
+    // element.innerHTML = leaderboardHtml;
+
+    document.addEventListener('DOMContentLoaded', () => {
+        var elements = []
+        var container = document.querySelector('#container')
+        // Add each row to the array
+        container.querySelectorAll('.row').forEach(el => elements.push(el))
+        // Clear the container
+        container.innerHTML = ''
+        // Sort the array from highest to lowest
+        elements.sort((a, b) => b.querySelector('quiz.score').textContent - a.querySelector('quiz.score').textContent)
+        // Put the elements back into the container
+        elements.forEach(e => container.appendChild(e))
+      });
       };
     //   setTimeout(function(){
     //     window.location.href = 'wall_of_fame.html';
@@ -140,3 +188,15 @@ var quiz = new codeQuiz(questions);
 populate();
 
 
+// document.addEventListener('DOMContentLoaded', () => {
+//     var elements = []
+//     var container = document.querySelector('#container')
+//     // Add each row to the array
+//     container.querySelectorAll('.row').forEach(el => elements.push(el))
+//     // Clear the container
+//     container.innerHTML = ''
+//     // Sort the array from highest to lowest
+//     elements.sort((a, b) => b.querySelector('quiz.score').textContent - a.querySelector('quiz.score').textContent)
+//     // Put the elements back into the container
+//     elements.forEach(e => container.appendChild(e))
+//   });
