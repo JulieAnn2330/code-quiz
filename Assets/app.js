@@ -1,5 +1,5 @@
 // Countdown clock
-var timeleft = 5 ;
+var timeleft = 90;
 var downloadTimer = setInterval(function () {
     timeleft--;
     document.getElementById("countdowntimer").textContent = "The quiz will end in " + timeleft + " Seconds";
@@ -113,12 +113,14 @@ function myFunction() {
     document.getElementById("demo").innerHTML = text;
   }
 
+//   Grabbing score an name for leaderboard
 function showScores() {
     var scoreObject = {
         name: name, 
         score: quiz.score
     }
 
+    // When game is over
     var gameOver = "<h1>Result</h1>";
     gameOver += "<h2 id = 'score'> Your score is " + quiz.score + " out of 10! Thank you for playing, " + name + "!</h2>";
     var element = document.getElementById("quiz");
@@ -128,6 +130,7 @@ function showScores() {
     showCurrentScore();
     console.log(name);
   
+    // Storing names to local storage
        if (name !== "") {
         var scores =
           JSON.parse(window.localStorage.getItem("scores")) || [];
@@ -135,6 +138,7 @@ function showScores() {
         window.localStorage.setItem("scores", JSON.stringify(scores));
       }
 
+    //   sort scores
       document.addEventListener('DOMContentLoaded', () => {
         var elements = []
         var container = document.querySelector('#container')
@@ -146,9 +150,7 @@ function showScores() {
         elements.sort((a, b) => b.querySelector('quiz.score').textContent - a.querySelector('quiz.score').textContent)
         // Put the elements back into the container
         elements.forEach(e => container.appendChild(e))
-        var result = name + scores;
-       
-        });
+         });
       };
 
    
