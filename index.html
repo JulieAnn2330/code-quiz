@@ -16,8 +16,8 @@
 <html lang="en">
 
 <head>
-     <!-- Link to favicon -->
-     <link rel="shortcut icon" href="./Assets/ampersand.png" />
+    <!-- Link to favicon -->
+    <link rel="shortcut icon" href="./Assets/ampersand.png" />
     <title>Code Quiz</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -26,7 +26,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- Link to style.css -->
     <link rel="stylesheet" href="./Assets/style.css">
     <!-- Link to fontawesome -->
@@ -44,35 +44,39 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        </nav>
+    </nav>
 
-        <script type="text/javascript">
+    <script type="text/javascript">
         // Collect the username
         var startGame = confirm("Are you ready to start?");
         var name = prompt("Enter your name.");
-    
-        // Good luck user
-        alert ("Good luck " + name + "!");
-       </script>
 
-<!-- Directions -->
+        // Good luck user
+        alert("Good luck " + name + "!");
+    </script>
+
+    <!-- Directions -->
     <div class="jumbotron">
         <h1 class="display-4">Javascript Code Quiz</h1>
         <p class="lead">Welcome to the Week 4 Javascript Code Quiz!</p>
         <hr class="my-4">
-        <p>On the follwing pages you will be presented with 10 multiple-choice questions, testing your knowledge of javaScript basics.
-        You will have 90 seconds to answer all 10 questions. If you answer any question incorrectly, 10 seconds will be subtracted from your time and 1 point from your quiz total.
-        At the end of the quiz you will receive your score and the opportunity to add your name to the JavaScript Wall of Fame!
-        To get started simply click the Start Quiz button to begin the timer, and good luck!
-    </p>
-
-          <p class="lead">
-          <a class="btn btn-primary btn-lg" href="./quiz.html" role="button"><i class="fas fa-stopwatch"></i> Start Quiz</a>
+        <p>On the follwing pages you will be presented with 10 multiple-choice questions, testing your knowledge of
+            javaScript basics.
+            You will have 90 seconds to answer all 10 questions. If you answer any question incorrectly, 10 seconds will
+            be subtracted from your time and 1 point from your quiz total.
+            At the end of the quiz you will receive your score and the opportunity to add your name to the JavaScript
+            Wall of Fame!
+            To get started simply click the Start Quiz button to begin the timer, and good luck!
         </p>
-      </div>
 
-  
-<!-- Footer -->
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="./quiz.html" role="button"><i class="fas fa-stopwatch"></i> Start
+                Quiz</a>
+        </p>
+    </div>
+
+
+    <!-- Footer -->
     <div class="container">
         <nav class="navbar fixed-bottom navbar-white bg-secondary" .text-white>
             <a class="quiz-footer" class="navbar-brand" href="#"> Created by Julie Ann Schaub, 2020</a>
@@ -81,4 +85,3 @@
     </div>
 
     <script src="./Assets/app.js"></script>
-    

@@ -7,7 +7,7 @@ var downloadTimer = setInterval(function () {
         clearInterval(downloadTimer);
         showScores();
     }
-      
+
 }, 1000);
 
 // Handling of questions
@@ -88,7 +88,7 @@ function guess(id, guess) {
 }
 
 // Show current score
-function showCurrentScore () {
+function showCurrentScore() {
     var currentScore = quiz.score;
     var element = document.getElementById("playerScore");
     // element.innerHtml = currentScore;
@@ -96,7 +96,7 @@ function showCurrentScore () {
 }
 
 // Progress bar at bottom of quiz
-function showProgress() { 
+function showProgress() {
     var currentQuestionNumber = quiz.questionIndex + 1;
     var element = document.getElementById("progress");
     element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
@@ -107,16 +107,16 @@ function myFunction() {
     var x = document.getElementById("frm1");
     var text = "";
     var i;
-    for (i = 0; i < x.length ;i++) {
-      text += x.elements[i].value + "<br>";
+    for (i = 0; i < x.length; i++) {
+        text += x.elements[i].value + "<br>";
     }
     document.getElementById("demo").innerHTML = text;
-  }
+}
 
 //   Grabbing score an name for leaderboard
 function showScores() {
     var scoreObject = {
-        name: name, 
+        name: name,
         score: quiz.score
     }
 
@@ -128,17 +128,16 @@ function showScores() {
     clearInterval(downloadTimer);
     document.getElementById("countdowntimer").innerHTML = "<h1>Game Over</h1>";
     showCurrentScore();
-    console.log(name);
-  
+
     // Storing names to local storage
-       if (name !== "") {
+    if (name !== "") {
         var scores =
-          JSON.parse(window.localStorage.getItem("scores")) || [];
+            JSON.parse(window.localStorage.getItem("scores")) || [];
         scores.push(scoreObject);
         window.localStorage.setItem("scores", JSON.stringify(scores));
-      }
+    }
 
-      document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
         var elements = []
         var container = document.querySelector('#container')
         // Add each row to the array
@@ -150,12 +149,16 @@ function showScores() {
         // Put the elements back into the container
         elements.forEach(e => container.appendChild(e))
         var result = name + scores;
-       
-        });
-      };
+        function Redirect() {
+            window.location = "./wall-of-fame.html";
+        }
+        document.write("You will be redirected to a new page in 5 seconds");
+        setTimeout('Redirect()', 5000);
 
-   
- // Questions
+    });
+};
+
+// Questions
 var questions = [
     new jsQuestion("1. What does javaScript provide to code?", ["a. Curb Appeal", "b. Functionality", "c. The Foundation", "d. None of the above"], "b. Functionality"),
     new jsQuestion("2. What is a simple defintion of javaScript?", ["a. JavaScript gives web pages interactive elements that engage a user.", "b. JavaScript gives structure and style to web pages.", "c. JavaScript defines rules for the construction of a document.", "d. None of the Above"], "a. JavaScript gives web pages interactive elements that engage a user."),
@@ -164,12 +167,11 @@ var questions = [
     new jsQuestion("5. In the index of an array is 5, how many items are inside the array?", ["a. 7", "b. 4", "c. -1", "d. 6"], "d. 6"),
     new jsQuestion("6. What is a variable?", ["a. A request made by a program or script that performs a predetermined function.", "b. A block of code designed to perform a particular task.", "c. A container for storing data values.", "d. None of the Above"], "c. A container for storing data values."),
     new jsQuestion("7. What is a function call?", ["a. A request made by a program or script that performs a predetermined function.", "b. A special variable, which can hold more than one value at a time.", "c. A method.", "d. None of the Above"], "a. A request made by a program or script that performs a predetermined function."),
-    new jsQuestion("8. If you had the string var txt = (ABCDEFGHIJKLMNOPQRSTUVWXYZ), var sln would equal what?" , ["a. txt", "b. (ABCDEFGHIJKLMNOPQRSTUVWXYZ)", "c. txt.length", "d. 26"], "c. txt.length"),
+    new jsQuestion("8. If you had the string var txt = (ABCDEFGHIJKLMNOPQRSTUVWXYZ), var sln would equal what?", ["a. txt", "b. (ABCDEFGHIJKLMNOPQRSTUVWXYZ)", "c. txt.length", "d. 26"], "c. txt.length"),
     new jsQuestion("9. How do you call the function showScore??", ["a. showScore()", "b. Undefined", "c. function ()", "d. function showScore(score)"], "a. showScore()"),
     new jsQuestion("10. Strict equality means values which we are comparing must have the same type, and is represented by which operator?", ["a. =", "b. ===", "c. ==", "d. >="], "b. ==="),
- ];
+];
 
 var quiz = new codeQuiz(questions);
 
 populate();
-
