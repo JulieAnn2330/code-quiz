@@ -125,13 +125,13 @@ function showScores() {
     // When game is over
     var gameOver = "<h1>Result</h1>";
     gameOver += "<h2 id = 'score'> Your score is " + quiz.score + " out of 10! Thank you for playing, " + name + "!</h2>";
-    var element = document.getElementById("quiz");
+    element = document.getElementById("quiz");
     element.innerHTML = gameOver;
     clearInterval(downloadTimer);
     document.getElementById("countdowntimer").innerHTML = "<h1>Game Over</h1>";
     var displayScores = "<h1>Leaderboard/h1>";
     displayScores += "<h2 id = 'leaderboard'>" + scoreObject + "</h2>";
-    var element = document.getElementById("scoreObject");
+    element = document.getElementById("scoreObject");
     element.innerHTML = displayScores;
     showCurrentScore();
     showScores();
