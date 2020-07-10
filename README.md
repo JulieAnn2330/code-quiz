@@ -1,6 +1,5 @@
 Deployed program: https://julieann2330.github.io/code-quiz/
 
-# password-generator
 Java Script Code Quiz
 
 This is a homework assignment that I created for the University of Kansas Coding BootCamp. 
