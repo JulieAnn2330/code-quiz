@@ -5,6 +5,7 @@ Deployed program: https://julieann2330.github.io/code-quiz/
 
 Technologies Used: HTML, CSS, JavaScript
 
+https://github.com/JulieAnn2330/code-quiz/issues/1#issue-669293911
 
 
 This is a homework assignment that I created for the University of Kansas Coding BootCamp. 
