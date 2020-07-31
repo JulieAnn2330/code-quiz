@@ -8,6 +8,8 @@ Technologies Used: HTML, CSS, JavaScript
 ![image](https://user-images.githubusercontent.com/64329660/88986592-0ab9cf00-d299-11ea-93ba-9a417dba7711.png)
 
 
+
+
 This is a homework assignment that I created for the University of Kansas Coding BootCamp. 
 
 It's week four and time for the students to take a 10 qu90estion quiz over JavaScript fundamentals. The quiz is timed at 90 seconds. For each question the student answers right, they get one point. For each question they answer wrong, they lose 10 seconds off the clock, plus a point. The quiz is over when all of the questions have been answered or time runs out. Scores dispay on the final page so the student can see how they did in comparison to others.
