@@ -3,7 +3,7 @@ Java Script Code Quiz
 
 Deployed program: https://julieann2330.github.io/code-quiz/
 
-Technologies Used: HTML, CSS, JavaScript
+Technologies Used: HTML, CSS, JavaScript, moment.js
 
 ![image](https://user-images.githubusercontent.com/64329660/88986592-0ab9cf00-d299-11ea-93ba-9a417dba7711.png)
 
